@@ -6,4 +6,5 @@ To install from within R console. First install package "devtools", then use com
 devtools::install_github("DavidHofmeyr/BOPNN")
 
 library(BOPNN)
+
 help("BOPNN-package")
