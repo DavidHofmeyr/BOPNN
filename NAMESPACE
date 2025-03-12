@@ -1,0 +1,8 @@
+importFrom("graphics", "plot")
+importFrom("stats", "cov", "rbeta", "sd")
+importFrom("parallel", "makeCluster", "clusterExport", "parLapply", "stopCluster")
+importFrom("RANN", "nn2")
+importFrom("rARPACK", "eigs_sym")
+export("BOPNN", "BOPNN_tune_parallel", "add_plotMat", "add_vimps")
+S3method(plot, BOPNN)
+S3method(predict, BOPNN)

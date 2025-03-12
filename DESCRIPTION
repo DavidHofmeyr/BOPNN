@@ -1,0 +1,11 @@
+Package: BOPNN
+Type: Package
+Title: Bags of Projected Nearest Neighbours
+Version: 0.1.0
+Author: David P. Hofmeyr
+Maintainer: David P. Hofmeyr <d.p.hofmeyr@lancaster.ac.uk>
+Description: Classification using bootstrap aggregation of nearest neighbours classifiers fit to different discriminant subspaces.
+License: GPL
+Encoding: UTF-8
+Depends: RANN, parallel, rARPACK
+LazyData: true
