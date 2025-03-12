@@ -3,7 +3,7 @@ Classification model based on bootstrap aggregating nearest neighbours models fi
 
 To install from within R console. First install package "devtools", then use command
 
-R> devtools::install_github("DavidHofmeyr/BOPNN") \n
-R> \n
-R> library(BOPNN) \n
-R> help("BOPNN-package") \n
+devtools::install_github("DavidHofmeyr/BOPNN")
+
+library(BOPNN)
+help("BOPNN-package")
