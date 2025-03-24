@@ -119,7 +119,8 @@ BOPNN <- function(data_df, nn = 3, ndim = NULL, dim_prop1 = .5, ndim_samp = NULL
   else{
     mods <- lapply(1:nbag,
                       function(x){
-                        smp <- sample(1:n, n_samp)
+                        if(is.null(case_weights)) smp <- sample(1:n, n_samp)
+                        else smp <- sample(1:n, n_samp, prob = case_weights, replace = TRUE)
                         dsmp <- sample(1:d, ndim_samp)
                         duse <- which(idxs%in%dsmp)
                         
